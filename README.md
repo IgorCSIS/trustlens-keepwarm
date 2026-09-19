@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/IgorCSIS/trustlens-keepwarm/actions/workflows/keep-warm.yml"><img src="https://img.shields.io/github/actions/workflow/status/IgorCSIS/trustlens-keepwarm/keep-warm.yml?label=keep-warm&labelColor=3E2230&color=FFD23F&style=flat-square" alt="Keep-warm workflow status"></a>
+  <a href="https://github.com/IgorCSIS/trustlens-keepwarm/actions/workflows/keepwarm.yml"><img src="https://img.shields.io/github/actions/workflow/status/IgorCSIS/trustlens-keepwarm/keepwarm.yml?label=keep-warm&labelColor=3E2230&color=FFD23F&style=flat-square" alt="Keep-warm workflow status"></a>
   <img src="https://img.shields.io/badge/schedule-every%2010%20minutes-FFD23F?labelColor=3E2230&style=flat-square" alt="Runs every ten minutes">
   <img src="https://img.shields.io/badge/secrets-none-FFD23F?labelColor=3E2230&style=flat-square" alt="No secrets">
   <img src="https://img.shields.io/badge/license-MIT-FFD23F?labelColor=3E2230&style=flat-square" alt="MIT licensed">
