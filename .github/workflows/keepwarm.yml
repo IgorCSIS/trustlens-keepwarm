@@ -17,4 +17,4 @@ jobs:
           echo "Pinging backend..."
           curl -fsS --max-time 90 https://trustlens-backend-djrm.onrender.com/health \
             && echo "" && echo "backend is awake" \
-            || echo "ping failed or timed out (backend may still be waking) — non-fatal"
+            || echo "ping failed or timed out (backend may still be waking), non-fatal"
