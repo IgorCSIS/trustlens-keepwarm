@@ -1,4 +1,15 @@
-# trustlens-keepwarm
+<p align="center">
+  <img src=".github/assets/banner.svg" alt="TrustLens Keep-warm: one cron, one curl. Every ten minutes a scheduled GitHub Action requests the backend health endpoint, because Render's free tier sleeps after fifteen minutes idle." width="880">
+</p>
+
+<p align="center">
+  <a href="https://github.com/IgorCSIS/trustlens-keepwarm/actions/workflows/keep-warm.yml"><img src="https://img.shields.io/github/actions/workflow/status/IgorCSIS/trustlens-keepwarm/keep-warm.yml?label=keep-warm&labelColor=3E2230&color=FFD23F&style=flat-square" alt="Keep-warm workflow status"></a>
+  <img src="https://img.shields.io/badge/schedule-every%2010%20minutes-FFD23F?labelColor=3E2230&style=flat-square" alt="Runs every ten minutes">
+  <img src="https://img.shields.io/badge/secrets-none-FFD23F?labelColor=3E2230&style=flat-square" alt="No secrets">
+  <img src="https://img.shields.io/badge/license-MIT-FFD23F?labelColor=3E2230&style=flat-square" alt="MIT licensed">
+</p>
+
+# trustlens-keepwarm: one cron that keeps the backend awake
 
 A tiny scheduled GitHub Action that pings the TrustLens backend's `/health`
 every 10 minutes so Render's free tier doesn't sleep (it naps after ~15 min
@@ -14,6 +25,15 @@ No secrets here: the health URL is a public endpoint.
 Note: GitHub disables scheduled workflows after 60 days with no repo activity.
 Push any commit to re-arm it. Scheduled runs can also be delayed a few minutes
 under load; that's fine for keep-warm.
+
+## Where this sits
+
+<p align="center">
+  <img src=".github/assets/repos.svg" alt="The four TrustLens repositories. trustlens-web posts scan and report requests to trustlens-backend, which reads Base and an AI triage API. trustlens-keepwarm requests the backend health endpoint every ten minutes. trustlens-contracts holds PaymentGate on Base Sepolia, and both payment arrows are dashed because they are switched off while the scanner is in free beta." width="880">
+</p>
+
+This repository is the small box on the right. It exists for one reason, and
+that reason is a line in somebody else's pricing page.
 
 ## The 60-day clock
 
